@@ -1,0 +1,9 @@
+@keyframes ladowanie {
+    from{ margin-top: -5%;}
+    to{ margin-top: 0%;}   
+}
+
+@keyframes ladowanieopacti {
+    from{ opacity: 0;}
+    to{ opacity: 1;}   
+}
