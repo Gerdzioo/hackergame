@@ -1,7 +1,7 @@
 body {
   background: url("../../zdjecia/tlo.png") center fixed no-repeat;
   background-size: cover;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -15,10 +15,6 @@ body {
 }
 
 #panelPrawa {
-  float: right;
-  width: 40%;
-  animation-name: ladowanieopacti;
-  animation-duration: 2s;
   display: none;
 }
 
@@ -27,42 +23,57 @@ body {
   margin-top: -10px;
   text-align: center;
   animation-name: ladowanieopacti;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
+}
+
+#leweOkno {
+  float: left;
+  background-color: rgba(19, 51, 19, 0.534);
+  margin-left: 8%;
+  padding: 1%;
+  border-radius: 5px 5px;
+  border-style: solid;
+  width: 80%;
+  animation-name: ladowanieopacti;
+  animation-duration: 1.5s;
+}
+
+#praweOkno {
+  float: left;
+  background-color: rgba(19, 51, 19, 0.534);
+  margin-left: 8%;
+  margin-top: 5%;
+  padding: 1%;
+  border-radius: 5px 5px;
+  border-style: solid;
+  width: 80%;
+  animation-name: ladowanieopacti;
+  animation-duration: 1.5s;
 }
 
 #panelPrawaMobile {
   float: right;
   width: 40%;
   animation-name: ladowanieopacti;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   display: block;
 }
 
-#leweOkno {
-  float: left;
-  background-color: rgba(19, 51, 19, 0.534);
-  margin-left: 5%;
-  padding: 1%;
-  border-radius: 5px 5px;
-  border-style: solid;
-  width: 40%;
-  animation-name: ladowanieopacti;
-  animation-duration: 2s;
-}
-
-#praweOkno {
-  float: right;
-  background-color: rgba(19, 51, 19, 0.534);
-  margin-right: 5%;
-  padding: 1%;
-  border-radius: 5px 5px;
-  border-style: solid;
-  width: 30%;
-  animation-name: ladowanieopacti;
-  animation-duration: 2s;
-}
-
 .text-gora {
+  float: right;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  transition: font-size 1s, background-color 1s;
+  width: 90%;
+  margin-top: 20%;
+}
+
+.text-gora:hover {
+  background-color: rgba(19, 51, 19, 0.836);
+}
+
+.rozwinMenu {
   float: right;
   font-size: 20px;
   color: white;
@@ -71,17 +82,9 @@ body {
   transition: font-size 1s;
 }
 
-.text-gora:hover {
-  font-size: 30px;
-}
-
 .small-text {
   font-size: 14px;
   transition: font-size 1s;
-}
-
-.small-text:hover {
-  font-size: 16px;
 }
 
 .button {
@@ -93,13 +96,59 @@ body {
   border-radius: 10px 10px;
 }
 
-.font {
-  font-size: 45px;
-  transition: font-size 1s;
+.panelloguj {
+  background-color: rgba(19, 51, 19, 0.534);
+  position: absolute;
+  display: none;
+  padding: 2%;
+  border-radius: 5px 5px;
+  border-style: solid;
+  right: 6%;
+  top: 9%;
 }
 
-.font:hover {
-  font-size: 50px;
+.wyjscieLogowanie {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+}
+
+.wyjscieMenu {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+}
+
+.wyjscieRejestracja {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+}
+
+.panelzarejestruj {
+  background-color: rgba(19, 51, 19, 0.534);
+  position: absolute;
+  display: none;
+  padding: 2%;
+  border-radius: 5px 5px;
+  border-style: solid;
+  right: 10%;
+  top: 9%;
+}
+
+.panelmenu {
+  background-color: rgba(0, 0, 0, 0.788);
+  top: -8;
+  right: -10;
+  position: absolute;
+  display: none;
+  color: white;
+  height: 99vh;
+}
+
+.font {
+  font-size: 40px;
+  transition: font-size 1s;
 }
 
 .just {
@@ -111,7 +160,7 @@ body {
 }
 
 .font-regular {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .font-big {
