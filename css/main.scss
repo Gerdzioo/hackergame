@@ -1,145 +1,104 @@
 $globalFont: 20px;
-$globalColorFont: rgb(255, 255, 255);
-$globalColor: rgb(1, 61, 16);
-$czaspokazywaniaStron: 1.5s;
+$globalFontColor: white;
 
-//globalne
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: $globalFontColor;
+}
 body{
     background:
     url("../zdjecia/tlo.png") center fixed no-repeat;
     background-size: cover;
     font-size: $globalFont;
     text-align: center;
-
+    width: 100%;
+    height: 100vh;
 }
 
-//id
-#gora{
-    top: 0;
-    margin: 0;
-    position: relative;
+a{
+    text-decoration: none;
+    transition: all 0.8s;   
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+}
+
+header{
+width: 100%;
+height: 15vh;
+}
+
+header .logo{
+    width: 20%;
+    height: 100px;
     float: left;
-    width: 95.5%;
-    padding: 2%;
-}
-#panelPrawa{
-    float: right;
-    width: 50%;
-    animation-name: ladowanieopacti;
-    animation-duration: $czaspokazywaniaStron;
-}
-#panelLewa{
-    float: left;
-    margin-top: -10px;
-    text-align: center;
-    animation-name: ladowanieopacti;
-    animation-duration: $czaspokazywaniaStron;
-}
-#leweOkno{
-    float: left;
-    background-color: rgba(19, 51, 19, 0.534);
-    margin-left: 5%;
-    padding: 1%;
-    border-radius: 5px 5px;
-    border-style: solid;
-    width: 30%;
-    animation-name: ladowanieopacti;
-    animation-duration: $czaspokazywaniaStron;
+    transition: all 0.2s;
 }
 
-#praweOkno{
-    float: right;
-    background-color: rgba(19, 51, 19, 0.534);
-    margin-right: 5%;
-    padding: 1%;
-    border-radius: 5px 5px;
-    border-style: solid;
-    width: 30%;
-    animation-name: ladowanieopacti;
-    animation-duration: $czaspokazywaniaStron;
+header .logo:hover{
+    background-color: rgba(0, 0, 0, 0.800);
+    border-radius: 25px;
 }
 
-#panelPrawaMobile{
-    display: none;
+header .logo .text{
+    font-size: 40px;
+    font-family: 'Rowdies';
+    font-weight: 700;
+    margin-top: 4%;
 }
 
-//class
-.text-gora{
+header .Panel{
+    width: 60%;
     float: right;
+}
+
+header li{
+    list-style-type: none;
+    float: right;
+    width: 25%;
+    height: 100px;
+    transition: all 0.2s;
+}
+
+header li:hover{
+    background-color: rgba(0, 0, 0, 0.800);
+    border-radius: 25px;
+}
+
+header li .text{
+    margin-top: 12%;
     font-size: 20px;
-    color: $globalColorFont;
-    font-weight: bold;
-    margin-right: 5%;
-    transition: font-size 1s;
-
+    font-family: 'Rowdies';
+    font-weight:  300;
 }
 
-.small-text{
-    font-size: 14px;
-    transition: font-size 1s;
-}
-.button{
-    background-color: black;
-    width: 75px;
-    padding: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 10px 10px;
-}
-.panelloguj{
-    background-color: rgba(19, 51, 19, 0.534);
-    position: absolute;
-    display: none;
-    padding: 2%;
-    border-radius: 5px 5px;
-    border-style: solid;
-    right: 6%;
-    top: 9%;
+
+main{
+    width: 100%;
+    height: auto;
 }
 
-.wyjscieLogowanie{
-    position: absolute;
-    top: 1%;
-    right: 2%;
+main nav{
+    width: 45%;
+    height: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 3%;
+    border: 5px solid black;
+    border-radius: 10px;
+    align-items: center;
 }
 
-.wyjscieRejestracja{
-    position: absolute;
-    top: 1%;
-    right: 2%;
-}
-
-.panelzarejestruj{
-    background-color: rgba(19, 51, 19, 0.534);
-    position: absolute;
-    display: none;
-    padding: 2%;
-    border-radius: 5px 5px;
-    border-style: solid;
-    right: 10%;
-    top: 9%;
-}
-
-//fonty
-.font{
-    font-size: 50px;
-    transition: font-size 1s;
-}
-.just{
-    text-align: justify;
-}
-.bold{
-    font-weight: bold;
-}
-.font-regular{
-    font-size: $globalFont;
-}
-.font-big{
-    font-size: 30px;
-}
-.font-smile{
-    font-size: 12px;
-}
-.font-center{
-    text-align: center;
+main nav li {
+    list-style-type: disc;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
 }

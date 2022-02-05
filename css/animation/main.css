@@ -1,0 +1,9 @@
+@keyframes pulseHeader {
+    0%{
+        border-radius: 0px;
+    }
+    50%{
+        background-color: rgba(0, 0, 0, 0.600);
+        border-radius: 25px;
+    }
+}
