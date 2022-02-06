@@ -84,9 +84,10 @@ main nav {
   padding-top: 1%;
   padding-bottom: 1%;
   margin-left: 3%;
-  border: 5px solid black;
+  border: 3px solid black;
   border-radius: 10px;
   align-items: center;
+  float: left;
 }
 
 main nav li {
@@ -95,4 +96,40 @@ main nav li {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+  padding: 2px;
+  transition: all 0.5s;
+}
+
+main nav li:hover {
+  list-style-type: none;
+  border-radius: 10px;
+}
+
+main .PanelLogowanie {
+  float: right;
+  width: 40%;
+  height: auto;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-right: 2%;
+}
+
+footer {
+  width: 100%;
+  height: 15vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+footer .text {
+  position: fixed;
+  bottom: 0;
+  margin-left: 46%;
+  margin-bottom: 1%;
+  color: black;
+  font-weight: bold;
 }

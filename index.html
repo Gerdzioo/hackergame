@@ -29,15 +29,15 @@
         <div class="Panel">
             <nav>
                 <ul>
-                    <li style="animation: pulseHeader 2s infinite;">
-                        <div class="text" >FAQ</div>
-                    </li>
-                    <li style="animation: pulseHeader 2s 1s infinite;">
+                    <li style="animation: pulseHeader 2s 1s infinite;" onclick="showLogoin()">
                         <div class="text">Logowanie</div>
                     </li>
                     <li style="animation: pulseHeader 2s 1.5s infinite;">
                         <div class="text">Rejestracja</div>
                     </li >
+                    <li style="animation: pulseHeader 2s infinite;">
+                        <div class="text" >FAQ</div>
+                    </li>
                 </ul>
                 </ul>
             </nav>
@@ -54,8 +54,23 @@
                 <li><a href="#">Administracja</a></li>   
             </ul>
         </nav>
-    </main>
 
+        <div id="PanelLogowanie" class="PanelLogowanie" style="display: none;">
+            <h2 style="font-weight: bold;">LOGOWANIE</h2>
+            <br>
+            <label>Login:</label><br>
+                <input type="text" placeholder="Login" id="" name=""/><br>
+            <label>Hasło:</label><br>
+                <input type="password" placeholder="Hasło" id="" name=""/><br>
+                <br>
+                <input type="submit" value="Zaloguj"/>
+        </div>
+    </main>
+    <footer>
+            <div class="text">
+                Jakub Gabriel &copy; 2022
+            </div>
+    </footer>
 
 </body>
 
